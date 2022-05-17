@@ -1,7 +1,6 @@
 .calc {
     width: 320px;
     margin: 100px auto;
-
 }
 
 #answer {
@@ -10,7 +9,7 @@
     padding: 10px;
     font-size: 35px;
     width: 320px;
-    height: 60px;
+    height: 80px;
     text-align: right;
     border: 3px solid #333;
 }
@@ -20,7 +19,7 @@
     background: -webkit-linear-gradient(top left, #492B84, #C56CDE);
     background: -moz-linear-gradient(top left, #492B84, #C56CDE);
     background: linear-gradient(to bottom right, #492B84, #C56CDE);
-    height: 80px;
+    height: 70px;
     width: 80px;
     color: white;
     font-size: 30px;
@@ -31,3 +30,4 @@
 .button1 {
     width: 160px;
 }
+
