@@ -4,9 +4,9 @@ document.body.style = 'background: rgba(171, 28, 73, 0.74)';
 
 function App() {
 
-  const initialState = JSON.parse(localStorage.getItem("result")) || [];
-  const [num, setnum] = useState(initialState)
-
+  let para = "";
+  let data = "";
+  let history = document.getElementById('history');
 
   const [result, setResult] = useState("");
 
@@ -20,22 +20,19 @@ function App() {
   }
 
   const calcular = () => {
+
     setResult(eval(result).toString());
-    setnum([...num, useState])
-    localStorage.setItem("result", JSON.stringify(result));
-  }
-  
-  const historial = () => {
-    localStorage.getItem("result")
+    para = document.createElement('p');
+    data = result + " = " + eval(result);
+    para.innerText = data;
+    history.appendChild(para);
+    return eval(result);
   }
 
   return (
     <div className="calc">
-
-      <div className="history">
-        <h3>Historial</h3>
-        <ol value={historial}></ol>
-      </div>
+        <div id="history">
+        </div>
 
       <input type="text"
         placeholder="0" id="answer"
@@ -132,6 +129,10 @@ function App() {
         onClick={calcular} />
 
     </div>
+
+
+
+
   );
 }
 

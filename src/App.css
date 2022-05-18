@@ -1,6 +1,9 @@
 .calc {
     width: 320px;
-    margin: 100px auto;
+    justify-content: center;
+    align-items: center;
+    float: none;
+    margin: 0 auto;
 }
 
 #answer {
@@ -9,7 +12,7 @@
     padding: 10px;
     font-size: 35px;
     width: 320px;
-    height: 80px;
+    height: 50px;
     text-align: right;
     border: 3px solid #333;
 }
@@ -31,3 +34,20 @@
     width: 160px;
 }
 
+#history {
+    width: 320spx;
+    height: 190px;
+    font-size: 0.1em+;
+    background: white;
+    border: 1px solid;
+}
+
+#history::-webkit-scrollbar {
+    width: 0;
+}
+
+#history p:last-child {
+    font-size: 0.9em;
+    font-weight: 200;
+    color: darkred;
+}
